@@ -1,51 +1,8 @@
-# SketchImage
-[![](https://jitpack.io/v/devsideal/SketchImage.svg)](https://jitpack.io/#devsideal/SketchImage)
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-SketchImage-green.svg?style=flat )]( https://android-arsenal.com/details/1/7116)
-[![GitHub license](https://img.shields.io/github/license/dcendents/android-maven-gradle-plugin.svg )]( http://www.apache.org/licenses/LICENSE-2.0.html)
+# Sketches-Images
 
-Convert image in pencil sketch and apply different effects with controller.
 
-## Demo
-![ReadMoreOption](/assets/sketchimage1.0.1.gif)
+Convert your images in pencil sketches and apply different effects with controller.
 
-## Dependency
-- Add the dependencies to your gradle files:
-
-#### Step 1. Add it in your root build.gradle at the end of repositories
-```gradle
-   allprojects {
-       repositories {
-    	...
-    	maven { url 'https://jitpack.io' }
-    	}
-    }
-```
-
-#### Step 2. Add the dependency
-```gradle
-    dependencies {
-        implementation 'com.github.devsideal:SketchImage:1.0.1'
-     }
-
-```
-
-## Usage
-```java
-
-  Bitmap bmOriginal = BitmapFactory.decodeResource(getResources(), R.drawable.your_image);
-  SketchImage sketchImage = new SketchImage.Builder(this, bmOriginal).build();
-  
-  Bitmap bmProcessed = sketchImage.getImageAs(
-            SketchImage.ORIGINAL_TO_SKETCH, 100 // value 0 - 100
-            // Other options
-            // SketchImage.ORIGINAL_TO_GRAY
-            // SketchImage.ORIGINAL_TO_COLORED_SKETCH
-            // SketchImage.ORIGINAL_TO_SOFT_SKETCH
-            // And many more.....
-    );
-  imageView.setImageBitmap(bmProcessed);
-
-```
 
 ## License
 ```
