@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sharu" />
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/iv_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        app:tabBackground="@android:color/holo_orange_light"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/white" />
+
+    <TextView
+
+        android:id="@+id/tv_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="32dp"
+        android:textSize="20sp"
+        tools:text="100 %" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome !! \n
+This Application helps us to make Sketch from an Image  \n
+\n
+Enjoy Sketching without Efforts !! "
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="25dp" />
+
+
+    <!-- <Button
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="16dp"
+         android:id="@+id/btn_sketch"
+         android:text="Sketch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <Button
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="16dp"
+         android:id="@+id/btn_gray"
+         android:text="Gray"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <Button
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="16dp"
+         android:id="@+id/btn_blur"
+         android:text="Blur"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <Button
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="16dp"
+         android:id="@+id/btn_invert"
+         android:text="Invert"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />-->
+
+</LinearLayout>
